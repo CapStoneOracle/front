@@ -10,9 +10,9 @@ const SearchBar = () => {
 
   return (
     <div className='d-flex'>
-      <img className='search-icon' src='/image/search.png'/>
+      <img className='search-icon' src='/image/search.png'alt='search'/>
       <input className='ft14r search-bar' type='text' placeholder='검색'></input>
-      <img className='mypage-icon' src='/image/mypage.png' onClick={() => onIconClick('/mypage')} />
+      <img className='mypage-icon' src='/image/mypage.png' onClick={() => onIconClick('/mypage')} alt='mypage'/>
     </div>
   )
 }

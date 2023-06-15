@@ -9,7 +9,7 @@ const Recommend = () => {
   };
   return (
     <div>
-     <img onClick={goRecommend} className='recommend-icon' src='/image/추천.png'/>
+     <img onClick={goRecommend} className='recommend-icon' src='/image/추천.png' alt='추천'/>
     </div>
   )
 }
