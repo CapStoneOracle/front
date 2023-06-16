@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import Dropdown from 'react-bootstrap/Dropdown';
 
-function EmailDropDown() {
+function EmailDropDown({ email, setEmail }) {
   const [selectedItem, setSelectedItem] = useState('이메일 선택');
 
   const handleSelect = (eventKey) => {
     setSelectedItem(eventKey);
+    setEmail(email + eventKey);
   };
 
   return (
@@ -16,10 +17,10 @@ function EmailDropDown() {
       title={selectedItem}
       onSelect={handleSelect}
     >
-      <Dropdown.Item eventKey="naver.com">naver.com</Dropdown.Item>
-      <Dropdown.Item eventKey="daum.net">daum.net</Dropdown.Item>
-      <Dropdown.Item eventKey="google.com">google.com</Dropdown.Item>
-      <Dropdown.Item eventKey="nate.com">nate.com</Dropdown.Item>
+      <Dropdown.Item eventKey="@naver.com">naver.com</Dropdown.Item>
+      <Dropdown.Item eventKey="@daum.net">daum.net</Dropdown.Item>
+      <Dropdown.Item eventKey="@google.com">google.com</Dropdown.Item>
+      <Dropdown.Item eventKey="@nate.com">nate.com</Dropdown.Item>
     </DropdownButton>
   );
 }

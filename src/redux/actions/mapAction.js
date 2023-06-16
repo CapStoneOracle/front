@@ -1,0 +1,5 @@
+function getMap(){
+    return (dispatch)=>{
+
+    }
+}
